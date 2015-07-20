@@ -1,0 +1,37 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<header class="main-header">
+    <nav class="main-nav overlay clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{@blog.title}}</h1>
+            <h2 class="page-description">{{@blog.description}}</h2>
+            <div class="social-likes">
+                <div class="facebook" title="Share link on Facebook">Facebook</div>
+                <div class="twitter" data-via="inmobi @doselecthq" title="Share link on Twitter">Twitter</div>
+                <div class="plusone" title="Share link on Google+">Google+</div>
+            </div>
+            <ul class="tag-list">
+                <li class="cat1"><a class="scroll-smooth" href="#hackathons">Hackathons</a></li>
+                <li class="cat2"><a class="scroll-smooth" href="#webinars">Webinars</a></li>
+                <li class="cat3"><a class="scroll-smooth" href="#posts">Posts</a></li>
+            </ul>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+{{! The main content area on the homepage }}
+<main id="content" class="index content" role="main">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</main>

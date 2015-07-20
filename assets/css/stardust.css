@@ -1,0 +1,175 @@
+body {
+  font-family: "Bitter", serif;
+  color: #3A4145;
+}
+
+.blog-logo img {
+    height: 30px;
+}
+
+.main-header {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.index.main-header {
+    background: transparent no-repeat center center;
+    background-size: cover;
+}
+
+.page-title {
+  letter-spacing: normal;
+  font-size: 5.5rem;
+  color: #FFC107;
+}
+
+.nav .nav-current a:after {
+
+border-bottom: 0; 
+
+}
+
+.page-description {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-family: "Bitter", serif;
+  letter-spacing: 0.01rem;
+  color: #ecf0f1;
+}
+
+.index.post {
+    background: #3F51B5;
+    padding: 4rem;
+    margin: 2rem auto;
+    border-bottom: 0;
+}
+
+.index.post::after {
+    display: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.post-excerpt p {
+    color: #fff;
+}
+
+.index .post a, a:hover {
+    color: #fff;
+}
+
+.index .post a:hover {
+    text-decoration: none;
+    border-bottom: solid #fff 1px;
+}
+
+.index .post-date {
+    color: #fff;
+}
+
+.index .post-meta {
+    color: #fff;
+}
+
+.post {
+    padding-top: 5rem;
+}
+
+.index.content {
+    background: transparent;
+}
+
+.content {
+    background: #fff;
+}
+
+.sub .post-title {
+    color: #3F51B5;
+}
+
+.sub .post a, a:hover {
+  color: inherit;
+}
+
+.sub .post-meta {
+    color: #FF6D00;
+}
+
+.social-likes {
+    margin: 10px 0 !important;
+}
+
+.no-cover.post-head.main-header {
+  height: 50px;
+  min-height: 0;
+  margin-bottom: 0;
+  background: #3F51B5;
+}
+
+.no-cover.post-head.main-header > .main-nav {
+    margin: 0;
+}
+
+.tag-list {
+    margin: 20px 0;
+    list-style: none;
+    padding: 0;
+}
+
+.tag-list > li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    zoom: 1;
+    display: inline-block;
+    min-width: 200px;
+    text-align: center;
+}
+
+.tag-list > li > a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.section-header {
+    width: 97%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.cat1 h3, li.cat1{
+    color: #FF5722;
+}
+
+.cat1 .post {
+    background: #FF5722;
+}
+
+.cat2 h3, li.cat2{
+    color: #3F51B5;
+}
+
+.cat2 .post {
+    background: #3F51B5;
+}
+
+.cat3 h3, li.cat3{
+    color: #607D8B;
+}
+
+.cat3 .post {
+    background: #607D8B;
+}
+
+.cat {
+  margin-bottom: 100px;
+}
