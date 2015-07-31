@@ -4,7 +4,73 @@
 </div>
 
 {{! This is the post loop - each post will be output using this markup }}
-<div class="cat cat1" id="hackathons">
+<div class="cat cat1" id="mafia">
+    <h3 class="section-header">InMobi Mafia</h3>
+    {{#foreach posts}}
+
+        {{#has tag="mafia"}}
+            <article class="index {{post_class}}" {{#if image}} style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.95)),url({{image}}){{/if}}">
+                <header class="post-header">
+                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                </header>
+                <section class="post-excerpt">
+                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+                </section>
+                <footer class="post-meta">
+                    {{tags}}
+                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                </footer>
+            </article>
+        {{/has}}
+
+    {{/foreach}}
+</div>
+
+<div class="cat cat2" id="story">
+    <h3 class="section-header">Our Story</h3>
+    {{#foreach posts}}
+
+        {{#has tag="story"}}
+            <article class="index {{post_class}}">
+                <header class="post-header">
+                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                </header>
+                <section class="post-excerpt">
+                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+                </section>
+                <footer class="post-meta">
+                    {{tags}}
+                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                </footer>
+            </article>
+        {{/has}}
+
+    {{/foreach}}
+</div>
+
+<div class="cat cat3" id="videos">
+    <h3 class="section-header">Videos</h3>
+    {{#foreach posts}}
+
+        {{#has tag="videos"}}
+            <article class="index {{post_class}}">
+                <header class="post-header">
+                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                </header>
+                <section class="post-excerpt">
+                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+                </section>
+                <footer class="post-meta">
+                    {{tags}}
+                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                </footer>
+            </article>
+        {{/has}}
+
+    {{/foreach}}
+</div>
+
+<div class="cat cat4" id="hackathons">
     <h3 class="section-header">Hackathons</h3>
     {{#foreach posts}}
 
@@ -17,9 +83,7 @@
                     <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
                 </section>
                 <footer class="post-meta">
-                    {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
-                    {{author}}
-                    {{tags prefix=" on "}}
+                    {{tags}}
                     <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
                 </footer>
             </article>
@@ -28,35 +92,11 @@
     {{/foreach}}
 </div>
 
-<div class="cat cat2" id="webinars">
-    <h3 class="section-header">Webinars</h3>
-    {{#foreach posts}}
-
-        {{#has tag="webinars"}}
-            <article class="index {{post_class}}">
-                <header class="post-header">
-                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-                </header>
-                <section class="post-excerpt">
-                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-                </section>
-                <footer class="post-meta">
-                    {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
-                    {{author}}
-                    {{tags prefix=" on "}}
-                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                </footer>
-            </article>
-        {{/has}}
-
-    {{/foreach}}
-</div>
-
-<div class="cat cat3" id="posts">
+<div class="cat cat5" id="posts">
     <h3 class="section-header">Posts</h3>
     {{#foreach posts}}
 
-        {{#has tag="blog posts"}}
+        {{#has tag="blogposts"}}
             <article class="index {{post_class}}">
                 <header class="post-header">
                     <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
@@ -65,9 +105,7 @@
                     <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
                 </section>
                 <footer class="post-meta">
-                    {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
-                    {{author}}
-                    {{tags prefix=" on "}}
+                    {{tags}}
                     <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
                 </footer>
             </article>

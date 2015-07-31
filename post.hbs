@@ -6,7 +6,7 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)),url({{image}}){{else}}no-cover{{/if}}">
+<header class="main-header post-head {{#if image}}" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url({{image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
@@ -31,7 +31,7 @@
 
         <div class="social-likes">
             <div class="facebook" title="Share link on Facebook">Facebook</div>
-            <div class="twitter" data-via="inmobi @doselecthq" title="Share link on Twitter">Twitter</div>
+            <div class="twitter" data-via="inmobi @doselecthq #LifeatInMobi" title="Share link on Twitter">Twitter</div>
             <div class="plusone" title="Share link on Google+">Google+</div>
         </div>
 

@@ -1,6 +1,46 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+<style>
+.social {
+    font-size: 1px;
+}
 
+.fb_iframe_widget {
+  top: -10px;
+}
+
+/* This gets Facebook to fall into place */
+.social iframe {
+    vertical-align: middle;
+}
+
+.social > div {
+    display: inline-block;
+    vertical-align:top;
+    min-width: 100px;
+}
+
+/* Set an optional width for your button wrappers */
+.social span {
+    display: inline-block;
+    width: 110px;
+}
+
+/* Adjust the widths individually if you like */
+.social .google {
+    width: 75px;
+}
+
+</style>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=227720500691427";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 {{! The big featured header }}
 <header class="main-header">
     <nav class="main-nav overlay clearfix">
@@ -13,15 +53,29 @@
         <div class="main-header-content inner">
             <h1 class="page-title">{{@blog.title}}</h1>
             <h2 class="page-description">{{@blog.description}}</h2>
-            <div class="social-likes">
+            <div class="social">
+                <div class="facebook">
+                    <div class="fb-follow" data-href="https://www.facebook.com/inmobicareers" data-layout="button" data-show-faces="false"></div>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/inmobicareers" class="twitter-follow-button" data-show-count="false">Follow @inmobicareers</a>
+                </div>
+                <div class="linkedin">
+                    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                    <script type="IN/FollowCompany" data-id="272972"></script>
+                </div>
+                <!--
                 <div class="facebook" title="Share link on Facebook">Facebook</div>
                 <div class="twitter" data-via="inmobi @doselecthq" title="Share link on Twitter">Twitter</div>
                 <div class="plusone" title="Share link on Google+">Google+</div>
+                -->
             </div>
             <ul class="tag-list">
-                <li class="cat1"><a class="scroll-smooth" href="#hackathons">Hackathons</a></li>
-                <li class="cat2"><a class="scroll-smooth" href="#webinars">Webinars</a></li>
-                <li class="cat3"><a class="scroll-smooth" href="#posts">Posts</a></li>
+                <li class="cat1"><a class="scroll-smooth" href="#mafia">InMobi Mafia</a></li>
+                <li class="cat2"><a class="scroll-smooth" href="#story">Our Story</a></li>
+                <li class="cat3"><a class="scroll-smooth" href="#videos">Videos</a></li>
+                <li class="cat4"><a class="scroll-smooth" href="#hackathons">Hackathons</a></li>
+                <li class="cat5"><a class="scroll-smooth" href="#posts">Posts</a></li>
             </ul>
         </div>
     </div>
