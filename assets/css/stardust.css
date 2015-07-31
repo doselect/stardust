@@ -8,7 +8,7 @@ body {
 }
 
 .main-header {
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) no-repeat center center;
     background-size: cover;
     margin-bottom: 0;
 }
@@ -41,7 +41,7 @@ border-bottom: 0;
 }
 
 .index.post {
-    background: #3F51B5;
+    background: #0083BF;
     padding: 4rem;
     margin: 2rem auto;
     border-bottom: 0;
@@ -89,7 +89,7 @@ a:focus {
 }
 
 .sub .post-title {
-    color: #3F51B5;
+    color: #0083BF;
 }
 
 .sub .post a, a:hover {
@@ -108,7 +108,7 @@ a:focus {
   height: 50px;
   min-height: 0;
   margin-bottom: 0;
-  background: #3F51B5;
+  background: #0083BF;
 }
 
 .no-cover.post-head.main-header > .main-nav {
@@ -128,8 +128,19 @@ a:focus {
     color: #fff;
     zoom: 1;
     display: inline-block;
-    min-width: 200px;
+    min-width: 170px;
     text-align: center;
+    border: solid 1px;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+.tag-list > li, .tag-list > a {
+  transition: all 0.3s ease;
+}
+
+.tag-list > li:hover, .tag-list > a:hover {
+  color: #fff;
 }
 
 .tag-list > li > a {
@@ -147,27 +158,43 @@ a:focus {
 }
 
 .cat1 h3, li.cat1{
-    color: #FF5722;
+    color: #EE7623;
 }
 
 .cat1 .post {
-    background: #FF5722;
+    background: #EE7623;
 }
 
 .cat2 h3, li.cat2{
-    color: #3F51B5;
+    color: #0083BF;
 }
 
 .cat2 .post {
-    background: #3F51B5;
+    background: #0083BF;
 }
 
 .cat3 h3, li.cat3{
-    color: #607D8B;
+    color: #4C9E45;
 }
 
 .cat3 .post {
-    background: #607D8B;
+    background: #4C9E45;
+}
+
+.cat4 h3, li.cat4{
+    color: #8e44ad;
+}
+
+.cat4 .post {
+    background: #8e44ad;
+}
+
+.cat5 h3, li.cat5{
+    color: #808285;
+}
+
+.cat5 .post {
+    background: #808285;
 }
 
 .cat {
