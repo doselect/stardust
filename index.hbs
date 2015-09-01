@@ -42,7 +42,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 {{! The big featured header }}
-<header class="main-header">
+<header class="main-header {{#if @blog.cover}}" style="background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url({{@blog.cover}}), no-repeat center center; background-position: center center; background-position: fixed; background-size: cover; {{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
@@ -83,7 +83,7 @@
 </header>
 
 {{! The main content area on the homepage }}
-<main id="content" class="index content" role="main">
+<main id="content" style="margin-top: 100px;" class="index content" role="main">
 
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}

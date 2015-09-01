@@ -45,6 +45,7 @@ border-bottom: 0;
     padding: 4rem;
     margin: 2rem auto;
     border-bottom: 0;
+    background-position: center center !important;
 }
 
 .index.post::after {
@@ -127,11 +128,10 @@ a:focus {
     text-transform: uppercase;
     color: #fff;
     zoom: 1;
+    border-radius: 3px;
     display: inline-block;
     min-width: 170px;
     text-align: center;
-    border: solid 1px;
-    border-radius: 3px;
     margin: 20px;
 }
 
@@ -157,40 +157,60 @@ a:focus {
     font-size: 40px;
 }
 
-.cat1 h3, li.cat1{
-    color: #EE7623;
+li.cat1{
+    background: #EE7623;
+}
+
+.cat1 h3 {
+  color: #EE7623;
 }
 
 .cat1 .post {
     background: #EE7623;
 }
 
-.cat2 h3, li.cat2{
-    color: #0083BF;
+li.cat2{
+    background: #0083BF;
+}
+
+.cat2 h3 {
+  color: #0083BF;
 }
 
 .cat2 .post {
     background: #0083BF;
 }
 
-.cat3 h3, li.cat3{
-    color: #4C9E45;
+li.cat3{
+    background: #4C9E45;
+}
+
+.cat3 h3 {
+  color: #4C9E45;
 }
 
 .cat3 .post {
     background: #4C9E45;
 }
 
-.cat4 h3, li.cat4{
-    color: #8e44ad;
+li.cat4{
+    background: #8e44ad;
+}
+
+.cat4 h3 {
+  color: #8e44ad;
 }
 
 .cat4 .post {
     background: #8e44ad;
 }
 
-.cat5 h3, li.cat5{
-    color: #808285;
+li.cat5{
+    background: #808285;
+}
+
+.cat5 h3 {
+  color: #808285;
 }
 
 .cat5 .post {
@@ -199,4 +219,16 @@ a:focus {
 
 .cat {
   margin-bottom: 100px;
+}
+
+.nav li:before {
+    display: none;
+}
+
+.post-content img {
+    max-width: 100%;
+}
+
+.post-head.main-header {
+    background-position: top center;
 }
