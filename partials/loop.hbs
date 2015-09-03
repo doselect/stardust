@@ -4,112 +4,20 @@
 </div>
 
 {{! This is the post loop - each post will be output using this markup }}
-<div class="cat cat1" id="mafia">
-    <h3 class="section-header">InMobi Mafia</h3>
+
+<div class="flex-container">
     {{#foreach posts}}
 
-        {{#has tag="InMobi Mafia"}}
-            <article class="index {{post_class}}" {{#if image}} style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url({{image}}){{/if}}">
-                <header class="post-header">
-                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-                </header>
-                <section class="post-excerpt">
-                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-                </section>
+        <a href="{{url}}" class="index {{post_class}}" {{#if image}} style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url({{image}}){{/if}}">
                 <footer class="post-meta">
-                    {{tags}}
-                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                 {{#foreach tags}}
+                    {{name}}
+                 {{/foreach}}
                 </footer>
-            </article>
-        {{/has}}
-
-    {{/foreach}}
-</div>
-
-<div class="cat cat2" id="story">
-    <h3 class="section-header">Our Story</h3>
-    {{#foreach posts}}
-
-        {{#has tag="Our Story"}}
-            <article class="index {{post_class}}" {{#if image}} style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url({{image}}){{/if}}">
                 <header class="post-header">
-                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                    <h2 class="post-title">{{{title}}}</h2>
                 </header>
-                <section class="post-excerpt">
-                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-                </section>
-                <footer class="post-meta">
-                    {{tags}}
-                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                </footer>
-            </article>
-        {{/has}}
-
-    {{/foreach}}
-</div>
-
-<div class="cat cat3" id="videos">
-    <h3 class="section-header">Videos</h3>
-    {{#foreach posts}}
-
-        {{#has tag="Videos"}}
-            <article class="index {{post_class}}" {{#if image}} style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url({{image}}){{/if}}">
-                <header class="post-header">
-                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-                </header>
-                <section class="post-excerpt">
-                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-                </section>
-                <footer class="post-meta">
-                    {{tags}}
-                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                </footer>
-            </article>
-        {{/has}}
-
-    {{/foreach}}
-</div>
-
-<div class="cat cat4" id="hackathons">
-    <h3 class="section-header">Hackathons</h3>
-    {{#foreach posts}}
-
-        {{#has tag="Hackathons"}}
-            <article class="index {{post_class}}" {{#if image}} style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url({{image}}){{/if}}">
-                <header class="post-header">
-                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-                </header>
-                <section class="post-excerpt">
-                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-                </section>
-                <footer class="post-meta">
-                    {{tags}}
-                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                </footer>
-            </article>
-        {{/has}}
-
-    {{/foreach}}
-</div>
-
-<div class="cat cat5" id="posts">
-    <h3 class="section-header">Posts</h3>
-    {{#foreach posts}}
-
-        {{#has tag="Posts"}}
-            <article class="index {{post_class}}" {{#if image}} style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url({{image}}){{/if}}">
-                <header class="post-header">
-                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-                </header>
-                <section class="post-excerpt">
-                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-                </section>
-                <footer class="post-meta">
-                    {{tags}}
-                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                </footer>
-            </article>
-        {{/has}}
+        </a>
 
     {{/foreach}}
 </div>
