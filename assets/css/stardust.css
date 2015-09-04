@@ -62,8 +62,8 @@ border-bottom: 0;
 
 .index.post  h2 {
   color: #fff !important;
-  max-width: 700px;
   text-transform: uppercase;
+  max-width: 500px;
 }
 
 .index.post::after {
@@ -279,4 +279,19 @@ li.cat5{
 
 .site-footer a {
     color: #2ecc71;
+}
+
+.tagpost {
+    position: relative;
+    width: 80%;
+    max-width: 710px !important;
+    margin: 4rem auto !important;
+    padding-bottom: 4rem;
+    border-bottom: #EBF2F6 1px solid;
+    word-wrap: break-word;
+        display: block;
+    flex-direction: initial;
+    align-items: initial;
+    min-height: initial !important;
+    min-width: initial;
 }
