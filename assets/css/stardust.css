@@ -307,3 +307,31 @@ li.cat5{
       text-align: center;
       background-color: #ecf0f1;
   }
+
+  .post-side-nav {
+    position: fixed;
+    background-color: #fff;
+    top: 50%;
+    right: 0;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    border: solid 1px #0083BF;
+    border-right: 0;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .post-side-nav > li {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 15px;
+  }
+
+  .post-side-nav > li > a {
+    color: #0083BF !important;
+    font-size: 28px;
+    text-decoration: none !important;
+  }

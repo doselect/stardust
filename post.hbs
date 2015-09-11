@@ -29,10 +29,36 @@
             {{content}}
         </section>
 
+        <ul class="post-side-nav">
+            {{#prev_post}}
+                <li>
+                    <a href="{{url}}" title="Previous post - {{title}}">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                </li>
+            {{/prev_post}}
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+            {{#next_post}}
+                <li>
+                    <a href="{{url}}" title="Next post - {{title}}">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </li>
+            {{/next_post}}
+        </ul>
+
         <div class="social-likes">
-            <div class="facebook" title="Share link on Facebook">Facebook</div>
-            <div class="twitter" data-via="inmobi @doselecthq #LifeatInMobi" title="Share link on Twitter">Twitter</div>
-            <div class="plusone" title="Share link on Google+">Google+</div>
+            <div style="padding-bottom: 18px;" class="facebook" title="Share link on Facebook">Facebook</div>
+            <div style="padding-bottom: 18px;" class="twitter" data-via="inmobi @doselecthq #LifeatInMobi" title="Share link on Twitter">Twitter</div>
+            <div style="padding-bottom: 18px;" class="plusone" title="Share link on Google+">Google+</div>
+            <div>
+                <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                <script type="IN/Share" data-counter="right"></script>
+            </div>
         </div>
 
     </article>
