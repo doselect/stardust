@@ -1,10 +1,14 @@
 body {
-  font-family: "Bitter", serif;
+  font-family: "Roboto Slab", serif;
   color: #3A4145;
 }
 
 .blog-logo img {
     height: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-header {
@@ -21,7 +25,9 @@ body {
 .page-title {
   letter-spacing: normal;
   font-size: 5.5rem;
-  color: #FFC107;
+  color: #fff;
+  margin: 25px 0;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .nav .nav-current a:after {
@@ -35,13 +41,13 @@ border-bottom: 0;
   font-size: 2rem;
   line-height: 1.5em;
   font-weight: 400;
-  font-family: "Bitter", serif;
+  font-family: "Roboto Slab", serif;
   letter-spacing: 0.01rem;
-  color: #ecf0f1;
+  color: #eee;
 }
 
 .index.post {
-    background: #0083BF;
+    background: #0588ca;
     padding: 4rem;
     margin: 0;
     border-bottom: 0;
@@ -65,6 +71,7 @@ border-bottom: 0;
   color: #fff !important;
   text-transform: uppercase;
   max-width: 500px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .index.post::after {
@@ -95,7 +102,7 @@ a:focus {
 .index .post-meta {
     color: #fff;
     margin-bottom: 5px;
-
+    font-family: 'Roboto Slab', serif;
 }
 
 .post {
@@ -118,7 +125,7 @@ a:focus {
 }
 
 .sub .post-title {
-    color: #0083BF;
+    color:#0588ca;
 }
 
 .sub .post a, a:hover {
@@ -126,7 +133,7 @@ a:focus {
 }
 
 .sub .post-meta {
-    color: #FF6D00;
+    color:#0588ca;
 }
 
 .social-likes {
@@ -151,8 +158,8 @@ a:focus {
 }
 
 .tag-list > li {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
     color: #fff;
     zoom: 1;
@@ -161,6 +168,9 @@ a:focus {
     min-width: 170px;
     text-align: center;
     margin: 20px;
+    border: solid 1px #fff;
+    padding: 5px;
+    font-size: 16px;
 }
 
 .tag-list > li, .tag-list > a {
@@ -300,7 +310,7 @@ li.cat5{
 
 .topic-header {
       padding: 30px 10px;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 3rem;
       text-transform: uppercase;
@@ -325,7 +335,7 @@ li.cat5{
 
   .post-side-nav > li {
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     padding: 15px;
   }
@@ -335,3 +345,61 @@ li.cat5{
     font-size: 28px;
     text-decoration: none !important;
   }
+
+  .nav-closed .menu-button {
+      border: 0;
+  }
+
+  .main-nav a {
+      font-family: 'Roboto', sans-serif;
+  }
+  .menu-button:hover {
+      background: transparent;
+      color: #fff;
+  }
+  .nav-closed .menu-button:hover {
+      color: #fff;
+  }
+
+  .nav-closed .no-cover .menu-button {
+      color: #fff;
+  }
+  .nav-closed .no-cover .menu-button:hover {
+      color: #fff;
+  }
+  .nav-opened .menu-button {
+      /*padding: 0 12px;*/
+      background: #111;
+      border: 0;
+      /*color: #fff;
+      -webkit-transform: translate3D(94px, 0, 0);
+      -ms-transform: translate3D(94px, 0, 0);
+      transform: translate3D(94px, 0, 0);
+      transition: all 0.3s ease;*/
+  }
+
+  .nav li {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+  }
+.nav-title {
+  font-weight: 400;
+}
+
+.post-meta {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+a.at-svc-facebook {
+    background: #0588ca !important;
+}
+a.at-svc-linkedin, a.at-svc-startaid {
+    background: #0588ca !important;
+}
+a.at-svc-lidar, a.at-svc-twitter, a.at-svc-yammer {
+    background: #0588ca !important;
+}
+a.at-svc-google_plusone, a.at-svc-google_plusone_share {
+    background: #0588ca !important;
+}

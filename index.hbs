@@ -1,10 +1,6 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 <style>
-.social {
-    font-size: 1px;
-}
-
 .fb_iframe_widget {
   top: -10px;
 }
@@ -14,10 +10,24 @@
     vertical-align: middle;
 }
 
-.social > div {
+.social {
+    padding: 0;
+}
+
+.social > li {
     display: inline-block;
     vertical-align:top;
-    min-width: 100px;
+    min-width: 70px;
+    color: #0588ca;
+    font-size: 22px;
+}
+
+.social > li > a {
+    color: #0588ca;
+}
+
+.social > li > a:hover {
+    color: #fff;
 }
 
 /* Set an optional width for your button wrappers */
@@ -53,7 +63,14 @@
         <div class="main-header-content inner">
             <h1 class="page-title">{{@blog.title}}</h1>
             <h2 class="page-description">{{@blog.description}}</h2>
-            <div class="social">
+            <ul class="tag-list">
+                <li><a href="/tag/story">InMobi Story</a></li>
+                <li><a href="/tag/videos">Videos</a></li>
+                <li><a href="/tag/mafia">InMobi Mafia</a></li>
+                <li><a href="/tag/hackathons">Hackathons</a></li>
+                <li><a href="/tag/blogposts">Posts</a></li>
+            </ul>
+            <!--<div class="social">
                 <div class="facebook">
                     <div class="fb-follow" data-href="https://www.facebook.com/inmobicareers" data-layout="button" data-show-faces="false"></div>
                 </div>
@@ -64,18 +81,11 @@
                     <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
                     <script type="IN/FollowCompany" data-id="272972"></script>
                 </div>
-                <!--
-                <div class="facebook" title="Share link on Facebook">Facebook</div>
-                <div class="twitter" data-via="inmobi @doselecthq" title="Share link on Twitter">Twitter</div>
-                <div class="plusone" title="Share link on Google+">Google+</div>
-                -->
-            </div>
-            <ul class="tag-list">
-                <li class="cat2"><a href="/tag/story">InMobi Story</a></li>
-                <li class="cat3"><a href="/tag/videos">Videos</a></li>
-                <li class="cat1"><a href="/tag/mafia">InMobi Mafia</a></li>
-                <li class="cat4"><a href="/tag/hackathons">Hackathons</a></li>
-                <li class="cat5"><a href="/tag/blogposts">Posts</a></li>
+            </div>-->
+            <ul class="social">
+                <li><a href="https://www.facebook.com/inmobicareers" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/inmobicareers" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/inmobi" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
         </div>
     </div>
