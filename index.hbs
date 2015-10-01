@@ -52,7 +52,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 {{! The big featured header }}
-<header class="main-header {{#if @blog.cover}}" style="background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url({{@blog.cover}}), no-repeat center center; background-position: center center; background-position: fixed; background-size: cover; {{else}}no-cover{{/if}}">
+<header class="main-header {{#if @blog.cover}}" style="background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url({{@blog.cover}}), no-repeat center center; background-position: center center; background-position: fixed; background-size: cover; {{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
