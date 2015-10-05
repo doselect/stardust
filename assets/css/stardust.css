@@ -287,6 +287,8 @@ li.cat5{
 
 .poweredby {
   color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .site-footer a {
@@ -417,4 +419,17 @@ div#at4-share:before {
 }
 .home-template .main-header:after {
     height: 100px;
+}
+.header-poweredby {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.header-poweredby > a {
+  color: #bbb !important;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.8;
 }
