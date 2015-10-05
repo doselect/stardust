@@ -403,3 +403,18 @@ a.at-svc-lidar, a.at-svc-twitter, a.at-svc-yammer {
 a.at-svc-google_plusone, a.at-svc-google_plusone_share {
     background: #0588ca !important;
 }
+div#at4-share:before {
+    content: 'Share';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #0588ca;
+    line-height: 2;
+}
+.home-template .main-header:after {
+    height: 100px;
+}
