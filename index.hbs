@@ -73,6 +73,18 @@
     <div class="header-poweredby">
         <a href="https://doselect.com" target="_blank">Powered by DoSelect</a>
     </div>
+    <div id="sdt-js"></div>
+<script>
+    var _beaconping = _beaconping || [];
+    _beaconping.push({goalName:"landing page", appId:"8011758802d24cd68f381c9639a906c2",event:"onloadbeacon"});
+
+    (function() {
+        var e = document.createElement('script');
+        e.src = 'http://sdtbeacon.appsdt.com/sdtbeacon.js';
+        e.async = true;
+        document.getElementById('sdt-js').appendChild(e);
+    }());
+</script> 
 </header>
 
 {{! The main content area on the homepage }}
